@@ -1,0 +1,38 @@
+{
+  "mode": "cpu",
+  "split": "seeded sample of development pairs up to 128 characters, excluding the checkpoint-selection subset",
+  "available_development_examples": 12752,
+  "expected_evaluated_examples": 4000,
+  "decode_limit": 128,
+  "decode_margin": 50,
+  "selection": "seeded 4000-pair sample of in-range development pairs not used for checkpoint selection",
+  "held_out_from_checkpoint_selection": true,
+  "evaluation_seconds": 340.8,
+  "checkpoint_best_validation_loss": 0.13556241989135742,
+  "model": {
+    "examples": 4000,
+    "unchanged_examples": 160,
+    "changed_examples": 3840,
+    "reference_characters": 243777,
+    "decode_failures": 1,
+    "decode_failure_rate": 0.00025,
+    "exact_match": 0.12975,
+    "character_error_rate": null,
+    "character_error_rate_failures_as_empty": 0.028862443954926018,
+    "unchanged_preservation": 0.875,
+    "changed_exact_match": 0.09869791666666666
+  },
+  "copy_baseline": {
+    "examples": 4000,
+    "unchanged_examples": 160,
+    "changed_examples": 3840,
+    "reference_characters": 243777,
+    "decode_failures": 0,
+    "decode_failure_rate": 0.0,
+    "exact_match": 0.04,
+    "character_error_rate": 0.029178306402983054,
+    "character_error_rate_failures_as_empty": 0.029178306402983054,
+    "unchanged_preservation": 1.0,
+    "changed_exact_match": 0.0
+  }
+}

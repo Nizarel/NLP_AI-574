@@ -1,0 +1,33 @@
+{
+  "mode": "smoke",
+  "split": "stratified development smoke subset",
+  "available_development_examples": 12752,
+  "expected_evaluated_examples": 4,
+  "decode_limit": 32,
+  "selection": "up to two short examples per subgroup",
+  "checkpoint_best_validation_loss": 3.3610591888427734,
+  "model": {
+    "examples": 4,
+    "unchanged_examples": 2,
+    "changed_examples": 2,
+    "reference_characters": 214,
+    "decode_failures": 4,
+    "decode_failure_rate": 1.0,
+    "exact_match": 0.0,
+    "character_error_rate": null,
+    "unchanged_preservation": 0.0,
+    "changed_exact_match": 0.0
+  },
+  "copy_baseline": {
+    "examples": 4,
+    "unchanged_examples": 2,
+    "changed_examples": 2,
+    "reference_characters": 214,
+    "decode_failures": 0,
+    "decode_failure_rate": 0.0,
+    "exact_match": 0.5,
+    "character_error_rate": 0.02336448598130841,
+    "unchanged_preservation": 1.0,
+    "changed_exact_match": 0.0
+  }
+}
