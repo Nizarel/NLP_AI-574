@@ -1,0 +1,57 @@
+{
+  "mode": "full",
+  "split": "all eligible source-disjoint held-out development pairs",
+  "available_development_examples": 12752,
+  "expected_evaluated_examples": 5659,
+  "decode_limit": 512,
+  "decode_margin": 50,
+  "selection": "all eligible held-out rows, excluding checkpoint-selection and training-source groups",
+  "held_out_from_checkpoint_selection": true,
+  "source_disjoint_from_training": true,
+  "split_summary": {
+    "strategy": "noisy-source-groups-v1",
+    "development_rows": 12752,
+    "duplicate_pairs": 425,
+    "duplicate_source_rows": 427,
+    "excluded_too_long": 0,
+    "excluded_training_source_rows": 5093,
+    "eligible_rows": 7659,
+    "eligible_source_groups": 7614,
+    "validation_rows": 2000,
+    "held_out_rows": 5659
+  },
+  "dataset_sha256": {
+    "train.tok.fr.txt": "814466814b7fe43810add32767592d6331dc06e4a9237d73617be4ab598a6633",
+    "train.tok.en.txt": "2f3b3d1d800bcebd512a8cb09ad43b46961e4ba223345092a93bdb6b56f66d11",
+    "dev.tok.fr.txt": "e9e4136572f4c7685379a88114eaf5dc00f6991164eb2ad7a2f16899281036f8",
+    "dev.tok.en.txt": "9e9bb44fd157239d770e5ad20ce1557783308d9832defde519e232fdc349aed3"
+  },
+  "evaluation_seconds": 351.2,
+  "checkpoint_best_validation_loss": 0.06742515414953232,
+  "model": {
+    "examples": 5659,
+    "unchanged_examples": 187,
+    "changed_examples": 5472,
+    "reference_characters": 540808,
+    "decode_failures": 0,
+    "decode_failure_rate": 0.0,
+    "exact_match": 0.3150733345113978,
+    "character_error_rate": 0.01976117217200929,
+    "character_error_rate_failures_as_empty": 0.01976117217200929,
+    "unchanged_preservation": 0.7914438502673797,
+    "changed_exact_match": 0.2987938596491228
+  },
+  "copy_baseline": {
+    "examples": 5659,
+    "unchanged_examples": 187,
+    "changed_examples": 5472,
+    "reference_characters": 540808,
+    "decode_failures": 0,
+    "decode_failure_rate": 0.0,
+    "exact_match": 0.03304470754550274,
+    "character_error_rate": 0.02177482581618615,
+    "character_error_rate_failures_as_empty": 0.02177482581618615,
+    "unchanged_preservation": 1.0,
+    "changed_exact_match": 0.0
+  }
+}
